@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <img src="gamepad.svg" alt="" />
+
+          <div class="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+
+          <ul class="links">
+            <li>
+              <div class="menu close">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </li>
+            <li class="link-item"><a href="" class="link">Games</a></li>
+            <li class="link-item"><a href="" class="link">Events</a></li>
+            <li class="link-item"><a href="" class="link">Store</a></li>
+            <li class="link-item"><a href="" class="link">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <script>
+      const menus = document.querySelectorAll(".menu");
+      const links = document.querySelector(".links");
+      for (menu of menus) {
+        menu.addEventListener("click", (e) => {
+          links.classList.toggle("toggle-menu");
+        });
+      }
+    </script>
+  </body>
+</html>
